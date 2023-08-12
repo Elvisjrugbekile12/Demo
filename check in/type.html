@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Type Checker</title>
+  <script defer>
+    function checkDataType() {
+      // Get the input value
+      const inputValue = document.getElementById("dataInput").value;
+      
+      // Check the data type
+      const dataType = typeof inputValue;
+      console.log(dataType)
+      // Display the result
+      document.getElementById("result").innerHTML = "Data Type: " + dataType;
+      
+    }
+document.querySelector("#dataInput").addEventListener("input", (e)=>{
+    console.log(e.target.value)
+});
+  </script>
+</head>
+<body>
+  <h1>Data Type Checker</h1>
+  
+  <label for="dataInput">Enter a value:</label>
+  <input type="number" id="dataInput">
+  <button onclick="checkDataType()">Check</button>
+  
+  <p id="result"></p>
+</body>
+</html>
+=
